@@ -1,0 +1,3 @@
+The error and major difference that python make, 
+is unnecessary conditions to select it(python),
+you understood python.
