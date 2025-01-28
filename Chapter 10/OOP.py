@@ -12,10 +12,10 @@ class employee:
         print(f"The employee salary is: {self.salary}")
         print(f"The employee language is: {self.lang}")
 
-    @staticmethod
+    @staticmethod    # --> called as "decorator" which is used to define a method which is not dependent on any instance
     def greet():
         print("Hello, how are you?")
-                             # the method whose name start with "__"(underscore(doubleunderscore may be)),
+                             # the method whose name start with "__"(double underscore) and end with "__"(double underscore)
                              # is known as "Dunder method".
                              # This method is called "dunder method" which is automatically called.Note that
     def __init__(self,sal):  # not all "dunder methods" are called,but particularly this "__init__" is called.
@@ -43,3 +43,5 @@ harry.getinfo() # --> This means that employee.getinfo(harry), thus it passes ha
 # with one argument mostly named as "self"(good practice) or we write "@staticmethod" before declaring the function.
 
 harry.greet()
+
+#In python by default all variables and functions are public.
